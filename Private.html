@@ -10,37 +10,11 @@
     <link href="https://fonts.cdnfonts.com/css/effra" rel="stylesheet" />
     <script src="../Javascripit/scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="../CSS/private.css" />
+    <link rel="stylesheet" href="/Private.css" />
 </head>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburger = document.querySelector('.nav-main .mobile-menu-icon .bi-list');
-        const navLinks = document.querySelector('.main-nav-links');
 
-        if (hamburger && navLinks) {
-            hamburger.addEventListener('click', function (e) {
-                e.stopPropagation();
-                navLinks.classList.toggle('mobile-show');
-            });
-
-            // Optional: Close menu when a link is clicked
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('mobile-show');
-                });
-            });
-
-            // Optional: Close menu when clicking outside
-            document.addEventListener('click', function (event) {
-                if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
-                    navLinks.classList.remove('mobile-show');
-                }
-            });
-        }
-    });
-</script>
 
 <body>
     <div class="lets-talk">
