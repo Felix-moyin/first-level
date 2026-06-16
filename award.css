@@ -432,9 +432,9 @@ header {
     }
 }
 
-legend {
+.legend {
     width: 100%;
-    height: 1200px;
+    height: 1000px;
     background-color: #EBEBEC;
     padding: 40px;
     position: relative;
@@ -682,7 +682,7 @@ legend {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     background: #fff;
-    /* padding-top: 10px; */
+    padding-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -714,9 +714,12 @@ legend {
 
 /* Moving Track */
 
-.main {
-    padding-top: 150px;
+main {
+    /* padding-top: 150px; */
     background-color: #ededed;
+    margin-bottom: 20px;
+    margin-top: -0px;
+
 }
 
 .thin-news-bx {
@@ -803,7 +806,156 @@ legend {
 }
 
 
+/* Helpful tools */
+.helpful{
+    background-color:none;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 
+.helpfu{
+    display: flex;
+    gap: 15px;
+}
+
+.help1{
+    background-color: white;
+    border: 6px solid #cbd8e5;
+    height: 150px;
+    width: 190px;
+}
+
+
+.help1 p{
+    padding: 90px 10px;
+    font-size: 1rem;
+}
+
+.help1:hover{
+    background-color:#eb7623;
+    border: none;
+    box-shadow: 0px 0px 80px  #eb7623;
+    color: white;
+    transform: translateY(-5px);
+    transition: ease-in-out 0.2s;
+}
+
+
+/* Footer */
+/* The footer starts here */
+footer {
+    background-color: #03478b;
+    background-image: url(../Multimedia/images/access-logo-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    object-fit: cover;
+}
+
+.tb-content {
+    width: 65%;
+    margin: auto;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.ft h1 {
+    color: white;
+}
+
+.ft p a {
+    color: rgba(255, 255, 255, 0.765);
+    font-size: 0.65rem;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+.extra-info {
+    width: 65%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.extra-bx {
+    width: 100%;
+    height: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.589);
+    border-right: 3px solid white;
+}
+
+.xtra-bx-content {
+    display: inline-flex;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.xtra-bx-content img {
+    width: 40px;
+}
+
+.xtra-bx-content a {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.xtra-bx-content p {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.licensed {
+    width: 100%;
+    background-color: white;
+    font-size: 0.7rem;
+    font-weight: 400;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.licensed img {
+    width: 20px;
+    height: 20px;
+}
+
+.ft-more-than-banking {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-access-line {
+    width: 30px;
+}
+
+.terms-policy ul {
+    display: flex;
+    gap: 20px;
+}
+
+.right-icons-mobile {
+    display: none;
+}
+
+.menu-box-icon {
+    display: none;
+}
+
+.ft-more-than-banking {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Footer end here */
 
 
 
