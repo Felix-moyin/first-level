@@ -1,0 +1,34 @@
+.wrap{
+     max-width: 1200px;
+    width: 90%;
+    background-color: aquamarine;
+    height: 500px;
+    display: flex;
+    gap: 25px;
+overflow: auto;
+}
+
+.bx{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    position: relative;
+}
+
+.inbx {
+    position: absolute;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 285px;
+    background-color: white;
+    max-height: 100px;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: max-height 0.4s ease, transform 0.4s ease;
+}
+
+
+.bx:hover .inbx{
+    max-height: 150px;
+    transform: translateY(-20px);
+}

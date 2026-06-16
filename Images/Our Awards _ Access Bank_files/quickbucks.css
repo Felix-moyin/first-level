@@ -1,0 +1,512 @@
+:root {
+	--orange-color: #ee7e01;
+	--private-banking-color: #000000;
+	--blue-color: #014086;
+	--green-color: #a4c519;
+	--gray-color: #f1f1f1;
+	--red-color: #b8061f;
+	--base-brand: #ee7e01;
+	--personal-brand: #a4c519;
+	--private-brand: #000000;
+	--business-brand: var(--blue-color);
+	--xclusive-brand: #003624;
+	--secondary-1-brand: #007168;
+	--secondary-2-brand: #b8061f;
+	--white-brand: #ffffff;
+}
+
+.text-red {
+	color: var(--red-color) !important;
+}
+
+.section-white {
+	background: var(--white-brand);
+}
+
+.section-gray {
+	background: var(--gray-color);
+}
+
+.section-green {
+	background: var(--green-color);
+}
+
+.section-blue {
+	background: var(--business-brand);
+}
+
+.section-padding {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.section-heading {
+	font-size: 2.5rem;
+	font-weight: 800;
+}
+
+.white-color {
+	color: var(--white-brand) !important;
+}
+
+.quickbuck-offerrings {
+	position: relative;
+}
+
+.salaried-loan-image {
+	max-width: 493px;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-position: center;
+	z-index: 1;
+	background-size: cover;
+	image-rendering: optimizeQuality;
+	will-change: left, right;
+}
+
+.banner-slant-line-new {
+	position: absolute;
+	width: 10px;
+	height: 40vw;
+	max-height: 436px;
+	min-height: 100px;
+	transform: rotate(45deg);
+	background: #ee7e01;
+	top: -13%;
+	left: 0;
+	z-index: 99;
+}
+
+
+
+.salaried-loan-image .qb-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	transition: 0.3s filter linear;
+}
+
+.salaried-loan-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.quickbuck-heading {
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.quick-buck-accordion {
+	max-width: 550px;
+	border-radius: 0px;
+	/* background-color: #fff; */
+}
+
+.quick-buck-accordion-item {
+	border-top: 1px solid #000000;
+}
+
+.quick-buck-accordion-item:last-child {
+	border-bottom: none;
+}
+
+.quick-buck-accordion-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	outline: none;
+}
+
+/* 
+.quick-buck-accordion-header:focus {
+	background-color: #e0e0e0;
+} 
+*/
+
+.quick-buck-accordion-header:hover {
+	background-color: #e0e0e0;
+}
+
+.quick-buck-accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+	padding: 0 15px;
+}
+
+.quick-buck-accordion-content.open {
+	/* max-height: 200px; */
+	max-height: max-content;
+	/* Adjust this value as needed */
+	padding: 0px 10px;
+}
+
+.quick-buck-accordion-content p {
+	margin: 0;
+}
+
+.quick-buck-accordion-button {
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	outline: none;
+	transition: transform 0.3s ease;
+}
+
+.quick-buck-accordion-button[aria-expanded="true"] i {
+	transform: rotate(90deg);
+}
+
+.quick-buck-accordion-button i {
+	color: #555;
+}
+
+.quick-buck-accordion-item h3 {
+	margin: 0;
+	flex-grow: 1;
+	font-size: 1.375rem;
+	font-weight: 500;
+	color: #000;
+}
+
+.quickbuk-table {
+	position: relative;
+}
+
+.quickbuk-table table td,
+.quickbuk-table table th {
+	border: none;
+	text-align: left;
+	padding: 8px;
+	font-size: 0.85rem;
+}
+
+.quickbuk-table table th {
+	font-weight: 600;
+	width: 135px;
+}
+
+.quickbuk-table table th i {
+	font-weight: 100;
+	line-height: 1;
+	font-style: italic;
+}
+
+.quick-buck-requirements {
+	position: relative;
+}
+
+.quick-buck-requirements h3 {
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: var(--blue-color);
+}
+
+.quick-buck-requirements ol,
+.quick-buck-requirements ul {
+	list-style: disc;
+	margin-left: 25px;
+}
+
+.finance {
+	position: relative;
+}
+
+.qb-device-finance {
+	background: var(--base-brand) url(../images/XtraWins-wallet.png) no-repeat bottom right;
+}
+
+.qb-vehicle-finance {
+	background: var(--green-color) url(../images/gift-vehicle.png) no-repeat bottom right;
+}
+
+.qb-device-finance, .qb-vehicle-finance {
+	position: relative;
+	padding: 3rem 2rem;
+	min-height: 450px;
+}
+
+.qb-device-finance h3, .qb-vehicle-finance h3 {
+	margin: 0;
+	flex-grow: 1;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.qb-device-finance .text, .qb-vehicle-finance .text {
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.qb-button-container {
+	position: absolute;
+	bottom: 25%;
+}
+
+.qb-features-benefits {
+	position: relative;
+}
+
+.qb-shadows {
+	box-shadow: 0.5rem 0.5rem 2.5rem 0px rgba(0, 0, 0, 0.16);
+}
+
+.qb-features-benefits .card {
+	margin: 0;
+	overflow: hidden;
+}
+
+.qb-features-benefits .card .banner-slant-line {
+	position: absolute;
+	width: 10px;
+	height: 40vw;
+	max-height: 400px;
+	min-height: 100px;
+	transform: rotate(40deg);
+	background: #ee7e01;
+	top: -45%;
+	left: 0;
+	z-index: 99;
+}
+
+.qb-features-benefits .card .card-body {
+	padding: 2.5rem 2rem;
+}
+
+.qb-features-benefits .card .card-body .card-heading {
+	font-size: 2.1rem;
+	font-weight: 900;
+	color: var(--green-color);
+	line-height: 1.15;
+	margin-top:8.5%
+}
+
+.qb-features-benefits .card .card-body .card-text {
+	font-size: 1rem;
+	line-height: 1.25;
+}
+
+
+
+.bg-blue-20 {
+	background-color: rgba(1, 64, 134, 0.2);
+}
+
+.bg-green-20 {
+	background-color: rgba(164, 198, 24, 0.2);
+}
+
+.bg-orange-20 {
+	background-color: rgba(235, 120, 36, 0.2);
+}
+
+.bg-red-20 {
+	background-color: rgba(190, 20, 21, 0.2);
+}
+
+.qb-step-flow {
+	margin-bottom: 5px;
+}
+
+.qb-step-guide {
+	background-color: rgba(68, 68, 68, 7%);
+}
+
+.qb-step-guide-slide {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 507px;
+	padding: 0px 12rem 0px 1rem;
+
+}
+
+.qb-step-guide-heading {
+	font-size: 2rem;
+	font-weight: 800;
+	height: 508px;
+	line-height: 1.25;
+	display: flex;
+	align-items: center;
+}
+
+.qb-step-guide-padding {
+	padding: 0 4rem 0 10rem;
+}
+
+.qb-swiper {
+	position: relative;
+}
+
+/* 
+.qb-swiper .swiper-wrapper {
+	padding-right: 15rem;
+} 
+*/
+.navig {
+	width: 125px;
+	height: 46px;
+	position: absolute;
+	right: 100px;
+	bottom: 30px;
+	z-index: 999;
+	display: flex;
+}
+
+.qb-step-guide-slide .swiper-button-next, .qb-step-guide-slide .swiper-button-prev {
+	position: absolute;
+	width: 50px;
+	height: 46px;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	color: rgba(255, 255, 255, 100%);
+	z-index: 10;
+}
+
+.qb-step-guide-slide .swiper-button-next:after, .qb-step-guide-slide .swiper-button-prev:after {
+	content: ' ';
+}
+
+@media only screen and (min-width:480px) and (max-width: 1024px) {
+	.qb-step-guide-slide {
+		padding: 0px 8rem 0px 2rem;
+	}
+
+	.navig {
+		right: 50px;
+	}
+
+	.qb-step-guide-padding {
+		padding: 0px 3rem 0 5rem;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.salaried-loan-padding {
+		margin-bottom: 3rem;
+	}
+
+	.qb-step-guide-heading {
+		height: auto;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		line-height: 3rem;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.qb-step-guide-slide {
+		padding: 0px 4rem 0px 2rem;
+	}
+
+	.navig {
+		right: 10px;
+		bottom: 30px;
+	}
+}
+
+.quick-buck-accordion {
+	max-width: 600px;
+	border-radius: 0px;
+	background-color: #fff;
+}
+
+.quick-buck-accordion-item {
+	border-top: 1px solid #000000;
+}
+
+.quick-buck-accordion-item:last-child {
+	border-bottom: none;
+}
+
+.quick-buck-accordion-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	outline: none;
+}
+
+/* 
+.quick-buck-accordion-header:focus {
+	background-color: #e0e0e0;
+} 
+*/
+
+.quick-buck-accordion-header:hover {
+	background-color: #e0e0e0;
+}
+
+.quick-buck-accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+	padding: 0 15px;
+	background-color: #fff;
+}
+
+.quick-buck-accordion-content.open {
+	/*max-height: 200px;
+	 Adjust this value as needed */
+	 max-height:fit-content;
+	padding: 15px 15px 20px;
+}
+
+.quick-buck-accordion-content p {
+	margin: 0;
+}
+
+.quick-buck-accordion-button {
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	outline: none;
+	transition: transform 0.3s ease;
+}
+
+.quick-buck-accordion-button[aria-expanded="true"] i {
+	transform: rotate(180deg);
+}
+
+.quick-buck-accordion-button i {
+	color: #555;
+}
+
+.quick-buck-accordion-item h3 {
+	margin: 0;
+	flex-grow: 1;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #000;
+}
+
+.quickbuck-cardsholder {
+	padding: 5rem 0 !important;
+}
+
+.quickbucks-card{
+	max-width: 500px !important;
+}
+
+.qb-registering.fr-view img.fr-dii, .qb-registering > .fr-view img.fr-dii{
+	width:auto !important
+}

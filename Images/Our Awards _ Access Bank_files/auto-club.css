@@ -1,0 +1,455 @@
+
+    /* New Autoclub starts */
+    #autoclub-pg .input-range {
+      flex-basis: 100%;
+    }
+
+    #autoclub-pg .range-value {
+      width: 100%;
+      bottom: unset;
+      top: 0;
+    }
+#autoclub-pg {
+  background: #f1f1f1;
+}
+    #autoclub-pg .range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 50%;
+      border: none;
+      background: var(--orange-color);
+    }
+
+    #autoclub-pg .range::-moz-range-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 50%;
+      border: none;
+      background: var(--orange-color);
+    }
+
+    #autoclub-pg .range {
+      background: #acacac;
+      height: 5px !important;
+      border-radius: 10px !important;
+      padding: 3px;
+    }
+
+    #autoclub-pg .slider-value-adjust {
+      border-radius: 5px !important;
+      z-index: 20;
+    }
+
+    #autoclub-pg .track-wrapper {
+      position: relative;
+      width: 100%;
+      z-index: 100;
+      transform: translateY(-6rem);
+    }
+
+    #autoclub-pg .road-container {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      margin-top: 6rem;
+      overflow: hidden;
+    }
+
+    #autoclub-pg .road-container-1 {
+      transform: rotateZ(6deg);
+      width: 110%;
+      margin-left: -5%;
+    }
+
+    #autoclub-pg .road-container-2 {
+      z-index: -1;
+    }
+
+    #autoclub-pg .road-track-wrapper {
+      display: flex;
+      position: relative;
+      animation: slideRoad 10s linear infinite;
+    }
+
+    #autoclub-pg .road-track-wrapper.road-track-wrapper-2 {
+      animation: slideRoad 10s linear infinite reverse;
+    }
+
+    #autoclub-pg .road-track {
+      width: 100%;
+      height: auto;
+    }
+.slider-wrap .slider-value {
+
+  top: -20px;
+}
+    @media (max-width: 600px) {
+      #autoclub-pg .road-container-1 {
+        transform: rotateZ(12deg);
+      }
+
+      #autoclub-pg .road-track {
+        width: 100%;
+        height: 2.5rem;
+      }
+    }
+
+    @keyframes slideRoad {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX(-25%);
+        /* Half of the width to show a smooth transition */
+      }
+
+      100% {
+        transform: translateX(-50%);
+        /* Half of the width to keep both images inside the visible area */
+      }
+    }
+
+    .card-interest-form {
+      padding: 1.25rem 2rem;
+    }
+
+    #autoclub-pg .card-interest-form>div {
+      margin-top: 0.5rem;
+    }
+
+    #autoclub-pg .card-interest-form div.section-bg input,
+    #autoclub-pg .card-interest-form div.section-bg select {
+      height: 60px;
+      border: none !important;
+      box-shadow: none !important;
+      background-color: inherit !important;
+    }
+
+    .section-bg select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: transparent;
+      background-image: url("data:image/svg+xml;utf8,<svg width='17' height='10' viewBox='0 0 17 10' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M1.63232 1.94629L8.34533 8.65929L15.0583 1.94629' stroke='black' stroke-width='2.23767' stroke-linecap='round' stroke-linejoin='round'/> </svg>");
+      background-repeat: no-repeat;
+      background-position-x: 98%;
+      background-position-y: 50%;
+      padding-right: 2rem;
+    }
+
+    .focus-slant-line {
+      position: absolute;
+      width: 7px;
+      /* max-height: 400px; */
+      min-height: 100px;
+      transform: rotateZ(40deg);
+      background: #ee7e01;
+      bottom: -1rem;
+      right: 4%;
+      height: 100%;
+      top: -1rem;
+      z-index: 99;
+    }
+
+    #autoclub-pg,
+    html {
+      overflow-x: hidden;
+    }
+
+    .milage-card {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 2.5rem;
+      background: url(../../content/images/autoclub/millage-form.png) no-repeat;
+      background-size: cover;
+      border: none;
+    }
+
+    .milage-card h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .milage-card .slider-body {
+      width: 100%;
+      padding: 2rem 0 0 !important;
+    }
+
+    .milage-card .result {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .milage-card .result>p {
+      width: 25%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      flex-direction: column;
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .trapezium-right {
+      clip-path: polygon(0 1%, 100% 0, 95% 100%, 0% 100%);
+    }
+
+    .trapezium-left {
+      clip-path: polygon(5% 0, 100% 1%, 100% 100%, 0 100%);
+    }
+
+    .parallelogram {
+      clip-path: polygon(5% 0, 100% 1%, 95% 100%, 0 100%);
+    }
+
+    #autoclub-pg .road-gradient {
+      background: linear-gradient(180deg, rgba(202, 202, 202, 0) 0%, #ee7e01 100%);
+      min-height: 50rem;
+      position: relative;
+    }
+
+    #autoclub-pg .road-gradient .road-track-divider {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 5px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(../../content/images/autoclub/Line.png);
+      background-repeat: repeat-y;
+    }
+
+    #autoclub-pg .requirements-section {
+      padding-top: 2rem;
+    }
+
+    #autoclub-pg .requirements-section .cards-wrap {
+      width: 38%;
+      margin-top: 6rem;
+    }
+
+    #autoclub-pg .requirements-section .card-title {
+      color: #014086;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      z-index: 100;
+    }
+
+    #autoclub-pg .left-cards .card-title {
+      width: 100%;
+    }
+
+    #autoclub-pg .left-cards .list-group-item {
+      text-align: right;
+      display: flex !important;
+      justify-content: flex-end;
+    }
+
+    #animated-car {
+      transition-delay: 1s;
+    }
+
+    #autoclub-pg .link:hover {
+      text-decoration: underline !important;
+    }
+
+    #autoclub-pg .approved-dealers-section {
+      padding: 5rem 0rem;
+      padding-bottom: 12rem;
+      clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%, 0 0);
+    }
+
+    #autoclub-pg .accordion {
+      padding: 1rem;
+    }
+
+    #autoclub-pg .accordion * {
+      color: black;
+    }
+
+    #autoclub-pg .download-forms {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    #autoclub-pg .download-forms>.form-download-click {
+      width: 47%;
+      height: 100px;
+      transition: transform 0.4s;
+    }
+
+    .form-download-click:hover {
+      transform: scale(1.04);
+    }
+
+    #autoclub-pg #quickbucks-link {
+      display: none;
+    }
+
+    #autoclub-pg .title-banner {
+      background-image: url("../../content/images/autoclub/autoclub-hero.png");
+      min-height: 650px;
+      height: 90vh;
+      max-height: 720px;
+    }
+
+    #autoclub-pg .title-banner .hero-img {
+      display: none;
+    }
+
+    #autoclub-pg .left-cards .list-group-item {
+      text-align: left;
+      flex-direction: row-reverse;
+    }
+
+    #autoclub-pg .left-cards .list-group-item img {
+      margin-right: 1rem !important;
+      margin-left: 0 !important;
+    }
+
+    @media (max-width: 600px) {
+      .trapezium-sm-right {
+        clip-path: polygon(0 1%, 100% 0, 95% 100%, 0% 100%);
+      }
+
+      .trapezium-sm-left {
+        clip-path: polygon(5% 0, 100% 1%, 100% 100%, 0 100%);
+      }
+
+      .parallelogram-sm {
+        clip-path: polygon(5% 0, 100% 1%, 95% 100%, 0 100%);
+      }
+
+      #autoclub-pg .title-banner .hero-img {
+        display: block;
+      }
+
+      #autoclub-pg .title-banner {
+        background-image: none;
+        /* min-height: unset; */
+        padding-top: 3rem;
+        height: auto;
+      }
+
+      #autoclub-pg .title-banner .hero-text {
+        text-align: center;
+      }
+
+      /* #autoclub-pg .card-interest-form .d-flex {
+    display: block !important;
+  } */
+      #autoclub-pg .card-interest-form .d-flex>div {
+        margin-bottom: 0.5rem;
+      }
+
+      #set_milage_loan_btn {
+        margin-bottom: -2.5rem !important;
+      }
+
+      .milage-card h2 {
+        font-size: 1.5rem;
+      }
+
+      .milage-card {
+        padding: 1.5rem;
+      }
+
+      .milage-card .result {
+        justify-content: space-between;
+      }
+
+      .milage-card .result>p {
+        width: 50%;
+        margin-bottom: 0.4rem;
+        /* clip-path: unset; */
+      }
+
+      #autoclub-pg .download-forms .form-download-click {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      #autoclub-pg .requirements-section .cards-wrap {
+        width: 100%;
+        margin-top: 0rem;
+      }
+
+      #autoclub-pg .requirements-section .d-flex {
+        flex-wrap: wrap;
+      }
+
+      #autoclub-pg .card-interest-form-wrapper {
+        min-width: unset !important;
+      }
+
+      #autoclub-pg .left-cards *,
+      #autoclub-pg .left-cards .card-title {
+        text-align: left;
+      }
+
+      #autoclub-pg .card {
+        margin-bottom: 1rem !important;
+      }
+
+      #autoclub-pg .list-group-item {
+        align-items: center;
+        flex-wrap: nowrap !important;
+      }
+    }
+
+
+#autoclub-pg.form_bold_border>.custom-select, .form-control {
+    background: #fff!important;
+    border: 1px solid #333;
+    height: 50px;
+    font-size: 15px !important;
+    color: #444444;
+    font-weight: 300 !important;
+}
+
+/*
+#autoclub-pg.form_bold_border>.custom-select,
+.form-control {
+    background: #f1f1f1 !important;
+    border: none;
+    height: 50px;
+    font-size: 15px !important;
+    color: #444444;
+    font-weight: 300 !important;
+}
+*/
+
+/* KENE's edits */
+#XclusivePlus span.ktc-checkbox > label {
+    width: 94%;
+    padding-left: 18px;
+	float:left;
+}
+#xclusive-club input[type=checkbox] {
+    width: 5%;
+    float: left;
+}
+
+#xclusive-club.form_bold_border>.custom-select,
+.form-control {
+  background: #fff !important;
+  border: 1px solid #333;
+  height: 50px;
+  font-size: 15px !important;
+  color: #444444;
+  font-weight: 300 !important;
+  margin-bottom: 20px !important;
+}
+
+#xclusive-club.rc-anchor {
+  margin-bottom: 50px !important;
+}

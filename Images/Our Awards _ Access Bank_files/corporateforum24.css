@@ -1,0 +1,424 @@
+div#acc-bnk-crp-frm-2024-main-container {
+	background-image: url("./images/main-bg.png");
+	min-height: 90vh;
+	background-size: cover;
+	padding: 48px 124px;
+	}
+
+	div#acc-bnk-crp-frm-2024-main-container h1 {
+	font-size: 1.8em;
+	font-weight: bold;
+	}
+
+	.acc-bnk-crp-frm-2024-main-container-left > p {
+	font-weight: bold;
+	}
+
+	.acc-bnk-crp-frm-2024-section {
+	display: flex;
+	}
+
+	.acc-bnk-crp-frm-2024-section h2 {
+	font-weight: bold;
+	}
+
+	.acc-bnk-crp-frm-2024-section > div {
+	padding: 12px;
+	}
+
+	.acc-bnk-crp-frm-2024-section > div:nth-of-type(1) {
+	border-right: 3px solid black;
+	}
+
+	section#acc-bnk-crp-frm-2024-ecn-rbrth-container {
+	/* padding: 124px 12px; */
+	text-align: center;
+	}
+
+	.acc-bnk-crp-frm-2024-main-container-left {
+	width: 45%;
+	}
+
+	section#acc-bnk-crp-frm-2024-ecn-rbrth-container h2,
+	#acc-bnk-crp-frm-2024-discussants-heading {
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-bottom: 12px;
+	}
+
+	div#acc-bnk-crp-frm-2024-ecn-rbrth-container-text-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	margin-bottom: 28px;
+	}
+
+	section#acc-bnk-crp-frm-2024-ecn-rbrth-container p {
+	width: 70%;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid .about-card {
+	height: 420px;
+	background-color: #f1f1f1;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid .about-card::after {
+	background-color: #ddd;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid .about-card .vert-section {
+	display: flex;
+	gap: 24px;
+	padding: 48px 12px;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid .about-card .vert-section h4 {
+	font-size: 1.3em;
+	font-weight: bold;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid .about-cards {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: 1fr 3fr;
+	margin-right: 3rem;
+	margin-left: 3rem;
+	margin-top: -300px;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid-container > img {
+	width: 90vw;
+	}
+
+	.access-bank-corporate-forum-2024-topic-card {
+	z-index: 1;
+	height: 403px;
+	padding: 8em 6em;
+	position: relative;
+	background: #ebebec;
+	}
+
+	.access-bank-corporate-forum-2024-topic-card::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0%;
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+	background-color: #333;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.2s cubic-bezier(0.25, 1, 0.3, 1);
+	}
+
+	.acc-bnk-crp-frm-2024-heading-container {
+	display: flex;
+	gap: 24px;
+	}
+
+	.acc-bnk-crp-frm-2024-heading-container > div > .heading {
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+	.acc-bnk-crp-frm-2024-heading-container > div > p {
+	font-size: 1.1em;
+	}
+
+	#acc-bnk-crp-frm-2024-discussants-row-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 280px);
+	grid-template-rows: auto;
+	gap: 36px;
+	margin: auto auto;
+	justify-content: center;
+	}
+	
+	.acc-bnk-crp-frm-2024-discussants-profile-showcase-container,
+	.acc-bnk-crp-frm-2024-speaker-intro-profile
+	{
+	height: 420px;
+	width: 280px;	   
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-position: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	}
+
+	#edun-1 {
+	background-image: url("./images/wale-edun.png");
+	width: 320px;
+	height: 420px;
+	}
+
+	#bismarck-1 {
+	background-image: url("./images/bismarck.png");
+	width: 320px;
+	height: 420px;
+	}
+
+	#taiwo-1 {
+	background-image: url("./images/taiwo.png");
+	width: 320px;
+	height: 420px;
+	}
+
+	#edun-1 .service-glass-2 p:nth-of-type(1),
+	#bismarck-1 .service-glass-2 p:nth-of-type(1),
+	#taiwo-1 .service-glass-2 p:nth-of-type(1) {
+	font-size: 0.8em;
+	color: var(--base-brand);
+	font-weight: 800;
+	}
+
+	#edun-1 .service-glass-2 p,
+	#bismarck-1 .service-glass-2 p,
+	#taiwo-1 .service-glass-2 p {
+	font-size: 0.8em;
+	font-weight: 400;
+	}
+
+	#edun-1 .service-glass-2 > p:not(nth-of-type(1)),
+	#bismarck-1 .service-glass-2 > p:not(nth-of-type(1)),
+	#taiwo-1 .service-glass-2 > p:not(nth-of-type(1)) {
+	font-size: 0.5em;
+	font-weight: 200;
+	}
+
+	#edun-1 .service-glass-2 > h3,
+	#bismarck-1 .service-glass-2 > h3,
+	#taiwo-1 .service-glass-2 > h3 {
+	font-size: 1.4em;
+	font-weight: bold;
+	}
+
+	#acc-bnk-crp-frm-2024-speaker-roll-section .row {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-bottom: 36px;
+	}
+
+	.acc-bnk-crp-frm-2024-speaker-intro-profile-bottom > p:nth-of-type(2) {
+	font-size: 0.7em;
+	font-weight: 200;
+	}
+
+	.acc-bnk-crp-frm-2024-speaker-intro-profile-bottom > h3:nth-of-type(1) {
+	font-size: 1.4em;
+	font-weight: bold;
+	}
+
+	#acc-bnk-crp-frm-2024-discussants-service .service-glass-2 {
+	background-color: black !important;
+	opacity: 0.95;
+	height: 5rem;
+	gap:unset;
+	background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, black 0%, black 100%);
+	}
+
+	#acc-bnk-crp-frm-2024-discussants-service .service-text-2 {
+	color: white;
+	}
+
+	#discussant-section-bg {
+	background-color: white;
+	}
+
+	#acc-bnk-crp-frm-2024-speaker-roll-section div.img-section {
+	display: flex;
+	justify-content: center;
+	}
+
+	#discussant-1 {
+	background-image: url("./images/image 69.png");
+	}
+
+	#discussant-2 {
+	background-image: url("./images/image 70.png");
+	}
+
+	#discussant-3 {
+	background-image: url("./images/image 71.png");
+	}
+	
+	#discussant-4 {
+	background-image: url("./images/image 73.png");
+	}
+	
+	.acc-bnk-crp-frm-2024-discussants-profile-showcase-container-bottom-container {
+	background-color: black;
+	opacity: 0.95;
+	margin: 12px;
+	padding: 18px 14px;
+	height: 140px;
+	}
+
+	.acc-bnk-crp-frm-2024-speaker-intro-profile-bottom {
+	background-color: #ebebec;
+	opacity: 0.95;
+	margin: 12px;
+	padding: 18px 14px;
+	height: 140px;
+	}
+	
+	.acc-bnk-crp-frm-2024-discussant-title {
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	font-size: 1.1em;
+	}
+	
+	p.acc-bnk-crp-frm-2024-discussants-profile-showcase-container-bottom-container-subtext {
+	color: white;
+	text-align: left;
+	}
+
+	#acc-bnk-crp-frm-2024-discussants-pagination .swiper-pagination-bullet-active {
+	background-color: var(--base-brand) !important;
+	}
+
+	.acc-bnk-crp-frm-2024-register-modal-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	
+	#about_modal .modal-content {
+	justify-content: center;
+	}
+
+	.acc-bnk-crp-frm-2024-register-modal-container-inner-container {
+	background-color: white;
+	width: 30vw;
+	}
+
+	.acc-bnk-crp-frm-2024-register-modal-container-inner-container-form-header, #acc-bnk-crp-frm-2024.modal-title {
+	padding-left: 32px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.3em;
+	}
+
+	.acc-bnk-crp-frm-2024-register-modal-container-inner-container-form-header-close, #acc-bnk-crp-frm-2024.close {
+	padding-right: 36px;
+	padding-left: 24px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-weight: bold;
+	font-size: 0.8em;
+	color: white;
+	background-color: var(--base-brand);
+	cursor: pointer;
+	}
+	
+	@media (max-width: 896px) {
+	.access-bank-corporate-forum-2024-topic-card {
+		display: none;
+		padding: 6em 4em;
+		height: 300px;
+	}
+
+	.acc-bnk-crp-frm-2024-main-container-left {
+		width: 80%;
+		align-self: center;
+	}
+
+	.acc-bnk-crp-frm-2024-main-container-left > img {
+		height: 240px;
+	}
+	
+	#acc-bnk-crp-frm-2024-main-container {
+		padding: 48px 36px;
+	}
+
+	.img-container {
+		display: none;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid .about-cards {
+		margin-top: 0px;
+		grid-template-columns: 1fr;
+	}
+
+	#edun-1 {
+		width: 100%;
+	}
+
+	.acc-bnk-crp-frm-2024-register-modal-container-inner-container {
+		background-color: white;
+		width: 70vw;
+	}
+	}
+
+	@media (max-width: 512px) {
+	#acc-bnk-crp-frm-2024-main-container {
+		padding: 48px 22px;
+	}
+
+	.img-container {
+		display: none;
+	}
+
+	#acc-bnk-crp-frm-2024-topic-grid .about-cards {
+		margin-top: 0px;
+		grid-template-columns: 1fr;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#edun-1 {
+	}
+
+	div#acc-bnk-crp-frm-2024-main-container {
+		padding: 96px 24px 24px 24px;
+		height: 70vh;
+	}
+
+	.acc-bnk-crp-frm-2024-main-container-left {
+		width: 90vw;
+	}
+
+	.acc-bnk-crp-frm-2024-section {
+		margin: 24px 0px;
+	}
+
+	.acc-bnk-crp-frm-2024-section-button-container {
+		margin-top: 24px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.acc-bnk-crp-frm-2024-main-container-left > h1 {
+		margin: 24px 0px;
+		text-align: center;
+	}
+
+	.acc-bnk-crp-frm-2024-main-container-left > p {
+		text-align: center;
+	}
+
+	#myscope acc-bnk-crp-frm-2024-register-modal-container {
+		width: 90vw;
+	}
+
+	.acc-bnk-crp-frm-2024-register-modal-container-inner-container {
+		width: 70vw;
+	}
+	}
+
+	@media (max-width: 800px) {
+	#edun-1, #bismarck-1, #taiwo-1 {
+		width: 90vw !important;
+		max-width: 90vw !important;
+	}
+	}
+	

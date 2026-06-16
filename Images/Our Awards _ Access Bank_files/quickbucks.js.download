@@ -1,0 +1,214 @@
+//import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+const regSwiper = new Swiper('.qb-registering', {
+  loop: true,
+  // slidesPerView: 4,
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    960: {
+      slidesPerView: 3,
+    },
+    1160: {
+      slidesPerView: 3,
+    },
+    1366: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: '.qb-register-next',
+    prevEl: '.qb-register-prev',
+  },
+})
+const deviceSwiper = new Swiper('.qb-device-fin', {
+  loop: true,
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    960: {
+      slidesPerView: 3,
+    },
+    1160: {
+      slidesPerView: 3,
+    },
+    1366: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: '.qb-device-fin-next',
+    prevEl: '.qb-device-fin-prev',
+  },
+})
+const businessesSwiper = new Swiper('.qb-businesses', {
+  loop: true,
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    960: {
+      slidesPerView: 3,
+    },
+    1160: {
+      slidesPerView: 3,
+    },
+    1366: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: '.qb-businesses-next',
+    prevEl: '.qb-businesses-prev',
+  },
+})
+const businessesfirstSwiper = new Swiper('.qb-businesses-first', {
+  loop: true,
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    960: {
+      slidesPerView: 3,
+    },
+    1160: {
+      slidesPerView: 3,
+    },
+    1366: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: '.qb-businesses-first-next',
+    prevEl: '.qb-businesses-first-prev',
+  },
+})
+const businessesrepeatSwiper = new Swiper('.qb-businesses-repeat', {
+  loop: true,
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    960: {
+      slidesPerView: 3,
+    },
+    1160: {
+      slidesPerView: 3,
+    },
+    1366: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: '.qb-businesses-repeat-next',
+    prevEl: '.qb-businesses-repeat-prev',
+  },
+})
+
+// Quick Buck - Accordion
+document.addEventListener('DOMContentLoaded', function () {
+  const accordionHeaders = document.querySelectorAll(
+    '.quick-buck-accordion-header'
+  )
+  accordionHeaders.forEach((header) => {
+    header.addEventListener('click', toggleAccordion)
+    header.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        toggleAccordion.call(header, e)
+      }
+    })
+  })
+
+  function toggleAccordion(event) {
+    const content = this.nextElementSibling
+    const button = this.querySelector('.quick-buck-accordion-button')
+    const isExpanded = button.getAttribute('aria-expanded') === 'true'
+
+    // Toggle the current section
+    button.setAttribute('aria-expanded', !isExpanded)
+    content.classList.toggle('open', !isExpanded)
+
+    // Optionally, close other sections (for exclusive accordion behavior)
+    accordionHeaders.forEach((otherHeader) => {
+      if (otherHeader !== this) {
+        const otherContent = otherHeader.nextElementSibling
+        const otherButton = otherHeader.querySelector(
+          '.quick-buck-accordion-button'
+        )
+        otherButton.setAttribute('aria-expanded', 'false')
+        otherContent.classList.remove('open')
+      }
+    })
+  }
+
+  // Adding keyboard accessibility for accordion
+  // const accordionContainer = document.getElementById('quickBuckAcordion')
+  const accordionContainer = document.getElementsByClassName(
+    'bullet-loan-accordion'
+  )[0]
+  accordionContainer.addEventListener('keydown', function (event) {
+    const activeElement = document.activeElement
+    const isAccordionHeader = activeElement.classList.contains(
+      'quick-buck-accordion-header'
+    )
+
+    if (!isAccordionHeader) return
+
+    switch (event.key) {
+      case 'ArrowDown':
+        focusNextAccordionHeader(activeElement)
+        break
+      case 'ArrowUp':
+        focusPreviousAccordionHeader(activeElement)
+        break
+      case 'Home':
+        focusFirstAccordionHeader()
+        break
+      case 'End':
+        focusLastAccordionHeader()
+        break
+      default:
+        break
+    }
+  })
+
+  function focusNextAccordionHeader(currentHeader) {
+    const nextHeader = currentHeader.nextElementSibling.nextElementSibling
+    if (nextHeader) {
+      nextHeader.focus()
+    }
+  }
+
+  function focusPreviousAccordionHeader(currentHeader) {
+    const previousHeader =
+      currentHeader.previousElementSibling.previousElementSibling
+    if (previousHeader) {
+      previousHeader.focus()
+    }
+  }
+
+  function focusFirstAccordionHeader() {
+    accordionHeaders[0].focus()
+  }
+
+  function focusLastAccordionHeader() {
+    accordionHeaders[accordionHeaders.length - 1].focus()
+  }
+})
