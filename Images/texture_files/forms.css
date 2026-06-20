@@ -1,0 +1,59 @@
+﻿/*Corporate Landing Form*/
+
+#bizcontact > button, input {
+    background: var(--business-brand);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 8px;
+    
+}
+
+
+
+/*German Desk Nigeria*/
+
+.form_bold_border > .custom-select, .form-control {
+    background: white;
+    border: 2px solid #000 ;
+   /* padding: 1.3em 1em;*/
+    height: 50px;
+    font-size: 1.2em;
+    color: #444444;
+    margin-bottom:7px;
+}
+
+
+.form_bold_border btn button, input {
+    background: var(--business-brand);
+    color: white;
+    border: none;
+    padding: 10px 12px;
+  
+    /*width: 30%;*/
+}
+
+.form_bold_border > .custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.form_bold_border > .select-selected {
+    color:#444
+}
+
+/*.custom-select, .form-control {
+    margin-bottom: 15px;
+    
+}*/
+
+/*Non form CSS*/
+
+.accor-header > h5 {
+    color:#000 
+}
+
+input[type=checkbox], input[type=radio] {
+  height: 20px !important;
+}
+
+#special-forms-width{ max-width:800px !important}
