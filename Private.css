@@ -220,7 +220,7 @@ header {
 }
 
 .banc2-link {
-    background-color: #EE7E01;
+    background-color: black;
     width: 100px;
     padding: 10px;
     margin-top: 10px;
@@ -1192,160 +1192,108 @@ aside {
     animation-play-state: paused;
 }
 
-.more-banking-car-container:hover .more-banking-car,
-.more-banking-car-container:active .more-banking-car,
-.more-banking-car-container:focus-within .more-banking-car {
-    animation-play-state: paused;
-}
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
+
+
+
+
+
+/* Extra Small Devices: 320px to 480px */
+@media (max-width: 480px) {
+    .top-bar-links li a {
+        font-size: 9px;
     }
 
-    100% {
-        transform: translateX(-55%);
+    .location-indicator {
+        font-size: 9px;
+    }
+
+    .primary-navigation {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .slide {
+        height: 350px;
+    }
+
+    .slide-txt {
+        font-size: 0.85rem;
+    }
+
+    .hero-card {
+        top: 85%;
+    }
+
+    .prod-ser {
+        padding: 15px;
+    }
+
+    .prod-ser h1 {
+        font-size: 1.2rem;
+    }
+
+    .invest-mangement {
+        height: 200px;
+    }
+
+    .private-banker {
+        height: 200px;
+    }
+
+    .sect-wealth {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .legend-card {
+        border-bottom: 4px solid #ed8200;
+    }
+
+    .give-a-call {
+        height: 250px;
+    }
+
+    .head-more-ways-h-txt {
+        font-size: 1rem;
+    }
+
+    .more-ways-sub-txt {
+        font-size: 1.2rem;
+    }
+
+    .way-card {
+        height: 120px;
+        width: 75px;
+    }
+
+    .loan-calcultor {
+        height: auto;
+    }
+
+    .calculator {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mr-banking-cards {
+        flex: 0 0 150px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .more-banking-car-container {
+        margin-top: 150px;
     }
 }
 
-.closa {
-    width: 90%;
-    margin: auto;
-}
 
-.closa-con {
-    position: relative;
-    width: 100%;
-    height: 330px;
-    margin-bottom: 200px;
-    background-image: url(../Multimedia/images/closaadv.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-}
 
-.bx-xlosa::after {
-    position: absolute;
-    content: "";
-    height: 500px;
-    background-color: #ed7e00;
-    width: 300px;
-    clip-path: polygon(97% 0, 100% 0%, 85% 100%, 81% 100%);
-    left: 34%;
-    top: 0;
-}
 
-.bx-xlosa {
-    padding: 80px;
-    position: absolute;
-    width: 500px;
-    height: 330px;
-    background: #a2c41a;
-    clip-path: polygon(0 0, 94% 0%, 88% 100%, 0% 100%);
-}
 
-.closa-txt {
-    margin-bottom: 90px;
-}
-
-.explore-more {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 300px;
-}
-
-.explore-more-txt {
-    text-align: center;
-}
-
-.explore-more-main {
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card-ft {
-    position: relative;
-    height: 300px;
-    width: 300px;
-}
-
-.rightr {
-    background-image: url(../Multimedia/images/sustainable-banking.png);
-    background-size: cover;
-}
-
-.mid {
-    background-image: url(../Multimedia/images/equipping-growing-businesses.png);
-    background-size: cover;
-}
-
-.leftr {
-    background-image: url(../Multimedia/images/financing.png);
-    background-size: cover;
-}
-
-.left-sub-card {
-    position: absolute;
-    top: 80%;
-    background-color: #03478b;
-    height: 250px;
-    width: 275px;
-    clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
-}
-
-.right-subb-card {
-    position: absolute;
-    top: 80%;
-    background-color: #03478b;
-    height: 250px;
-    width: 275px;
-    clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
-}
-
-.mid-sub-card {
-    position: absolute;
-    top: 64%;
-    background-color: #03478b;
-    height: 300px;
-    width: 280px;
-    clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
-}
-
-.mid-sub-card::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    background-color: #ed7e00;
-    width: 16px;
-    clip-path: polygon(55% 0, 100% 0, 45% 100%, 0 100%);
-    right: 0;
-    top: 0;
-}
-
-.left-sub-card::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    background-color: #ed7e00;
-    width: 14px;
-    clip-path: polygon(55% 0, 100% 0, 45% 100%, 0 100%);
-    right: 0;
-    top: 0;
-}
-
-.right-subb-card::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    background-color: #ed7e00;
-    width: 14px;
-    clip-path: polygon(55% 0, 100% 0, 45% 100%, 0 100%);
-    right: 0;
-    top: 0;
-}
 
 .explore-banking-txt {
     margin-top: 20px;
