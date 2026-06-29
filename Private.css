@@ -2207,6 +2207,656 @@ footer {
 }
 
 /* Private page overflow fixes: tablet and mobile */
+
+@media (max-width: 992px) {
+
+
+    .topbar-mobile-menu.open {
+        display: block;
+    }
+
+    .main-mobile-menu.open {
+        display: flex;
+    }
+
+    /* ---------- TOP BAR ---------- */
+    .top-bar {
+        padding: 8px 20px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .top-bar-links {
+        display: none;
+    }
+
+    /* Grid icon on left via a button we add in HTML */
+    .grid-icon-btn {
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 4px;
+    }
+
+    .grid-icon-btn span {
+        display: flex;
+        gap: 3px;
+    }
+
+    .grid-icon-btn span i {
+        width: 7px;
+        height: 7px;
+        background: #64748b;
+        border-radius: 1px;
+        display: block;
+    }
+
+    /* ---------- TOPBAR DROPDOWN (blue full-width) ---------- */
+    .topbar-mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #03478B;
+        z-index: 999999;
+        padding: 0;
+    }
+
+    .topbar-mobile-menu.open {
+        display: block;
+    }
+
+    .topbar-mobile-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .topbar-close-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    .topbar-nigeria {
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .topbar-mobile-menu ul {
+        list-style: none;
+        padding: 10px 0 20px;
+        margin: 0;
+    }
+
+    .topbar-mobile-menu ul li a {
+        display: block;
+        padding: 16px 24px;
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .topbar-mobile-menu ul li:last-child a {
+        color: #EE7E01;
+        font-weight: 600;
+    }
+
+    .topbar-mobile-menu ul li a:hover {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* ---------- PRIMARY NAV ---------- */
+    .primary-navigation {
+        padding: 14px 20px;
+        position: relative;
+    }
+
+    /* Hide desktop nav links */
+    .main-nav-links {
+        display: none;
+    }
+
+    /* Hide desktop search input */
+    .main-actions form {
+        display: none;
+    }
+
+    /* Main actions: Internet Banking + search icon + Menu + hamburger */
+    .main-actions {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 0;
+    }
+
+    .net-banking {
+        background-color: transparent;
+        color: #EE7E01;
+        border: 2px solid #EE7E01;
+        padding: 7px 14px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    /* Search icon button */
+    .search-icon-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: #0f172a;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Menu label + hamburger button */
+    .hamburger {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+    }
+
+    .hamburger .menu-label {
+        font-size: 14px;
+        font-weight: 500;
+        color: #0f172a;
+    }
+
+    .hamburger .bar-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hamburger .bar-wrap span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #0f172a;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* Logo size */
+    .logo img {
+        width: 110px;
+    }
+
+    /* ---------- MAIN NAV DROPDOWN (white full-width) ---------- */
+    .main-mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        z-index: 999998;
+        overflow-y: auto;
+        flex-direction: column;
+    }
+
+    .main-mobile-menu.open {
+        display: flex;
+    }
+
+    /* Top bar inside main menu: logo left, Internet Banking + search + X right */
+    .main-mobile-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 20px;
+        border-bottom: 1px solid #e4e4e7;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 2;
+    }
+
+    .main-mobile-top .logo img {
+        width: 110px;
+    }
+
+    .main-mobile-top-right {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .main-mobile-close {
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: #0f172a;
+        line-height: 1;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    /* Nav accordion list */
+    .main-mobile-menu nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-mobile-menu nav ul li {
+        border-bottom: 1px solid #e4e4e7;
+    }
+
+    .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 24px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: #0f172a;
+    }
+
+    .accordion-header:hover {
+        color: #EE7E01;
+    }
+
+    .accordion-chevron {
+        color: #EE7E01;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    .accordion-header.active .accordion-chevron {
+        transform: rotate(180deg);
+    }
+
+    /* Sub-links */
+    .accordion-body {
+        display: none;
+        background: #f8f8f8;
+        padding: 6px 0 14px;
+    }
+
+    .accordion-body.open {
+        display: block;
+    }
+
+    .accordion-body a {
+        display: block;
+        padding: 10px 36px;
+        font-size: 13px;
+        color: #374151;
+    }
+
+    .accordion-body a:hover {
+        color: #EE7E01;
+    }
+
+    /* Bottom bar: Contact Us | Help & Support | Locate Us */
+    .main-mobile-bottom {
+        display: flex;
+        gap: 0;
+        border-top: 4px solid;
+        border-image: linear-gradient(to right, #03478B 25%, #c21700 25%, #c21700 50%, #a2c41a 50%, #a2c41a 75%, #eb7623 75%) 1;
+        padding: 16px 24px;
+        gap: 24px;
+        margin-top: auto;
+    }
+
+    .main-mobile-bottom a {
+        font-size: 13px;
+        color: #374151;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .main-mobile-bottom a:hover {
+        color: #EE7E01;
+    }
+
+    /* hero cards */
+
+    /* ---------- HERO CARDS HORIZONTAL SCROLL ---------- */
+
+    .hero-card {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        left: 0;
+        top: 40%;
+        margin-top: 0;
+        height: auto;
+        padding: 0;
+        clip-path: none;
+    }
+
+    .hero-card::-webkit-scrollbar {
+        display: none;
+    }
+
+    .create-account {
+        flex: 0 0 50%;
+        min-width: 40%;
+        scroll-snap-align: start;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* way- to- bank */
+
+    /* ---------- WAYS TO BANK HORIZONTAL SCROLL ---------- */
+
+    .way-to-bank {
+        width: 100%;
+        margin-left: 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 20px 16px;
+    }
+
+    .way-to-bank::-webkit-scrollbar {
+        display: none;
+    }
+
+    .way-card {
+        flex: 0 0 25%;
+        min-width: 120px;
+        scroll-snap-align: start;
+    }
+
+    .loan-copy p {
+        width: 260px;
+    }
+
+    .eligible {
+        width: 300px;
+        margin-right: 30px;
+    }
+
+    .loan-calculator {
+        margin-right: 40px;
+    }
+
+
+    /* Helful tools */
+    /* ---------- HELPFUL TOOLS HORIZONTAL SCROLL ---------- */
+
+    .helpfu {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    .helpfu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .help1 {
+        flex: 0 0 45%;
+        min-width: 160px;
+        scroll-snap-align: start;
+    }
+
+
+    /* ---------- LOAN CALCULATOR ---------- */
+
+    .loan-section-wrap {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .loan-calculator {
+        grid-template-columns: 1fr;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .loan-copy {
+        min-height: auto;
+        padding: 30px 24px;
+        text-align: center;
+    }
+
+    .loan-copy h2 {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .loan-copy>p {
+        width: 100%;
+        margin: 16px auto 0;
+    }
+
+    .terms-condition {
+        margin: 24px auto 0;
+    }
+
+    .salary-meter {
+        padding: 40px 0;
+        border-top: 2px solid rgba(255, 255, 255, 0.4);
+        border-left: none;
+        min-height: auto;
+    }
+
+    .salary-meter p {
+        position: static;
+        width: 100%;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .eligible {
+        min-height: auto;
+        margin-right: 0;
+        /* clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%); */
+        clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+    }
+
+    .eligible-content {
+        margin-left: 20px;
+        padding: 30px 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .main-content {
+        height: auto;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    .loan-section-wrap {
+        position: relative;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+
+    /* ---------- EXPLORE SECTION ---------- */
+
+    Article {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .explore2 {
+        width: 100%;
+        gap: 10px;
+        margin-top: 30px;
+        flex-wrap: nowrap;
+    }
+
+    .explore2a,
+    .explore2b,
+    .explore2c {
+        flex: 1;
+        min-width: 0;
+        height: 450px;
+    }
+
+    .shape1 {
+        position: absolute;
+        top: 55%;
+        width: 95%;
+        height: auto;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    /* footer */
+
+    /* ---------- FOOTER ---------- */
+
+    /* Stack footer columns vertically */
+    .tb-content {
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    /* Each footer column becomes an accordion item */
+    .ft {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 0;
+    }
+
+    /* Hide all footer links by default */
+    .ft p {
+        display: none;
+    }
+
+    /* Footer heading becomes the accordion trigger */
+    .ft h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 24px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: white;
+        margin: 0;
+    }
+
+    /* The + icon */
+    .ft h1::after {
+        content: "+";
+        font-size: 22px;
+        font-weight: 300;
+        color: white;
+        flex-shrink: 0;
+    }
+
+    /* When open, show - icon */
+    .ft.ft-open h1::after {
+        content: "−";
+    }
+
+    /* Show links when ft-open class is added */
+    .ft.ft-open p {
+        display: block;
+        padding: 4px 24px;
+    }
+
+    .ft.ft-open p a {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.85);
+        display: block;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .ft.ft-open p:last-child a {
+        border-bottom: none;
+    }
+
+    .ft.ft-open p a:hover {
+        color: #EE7E01;
+    }
+
+    /* Extra info box */
+    .extra-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .extra-bx {
+        height: auto;
+    }
+
+    .xtra-bx-content {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 14px;
+        padding: 16px;
+        width: 100%;
+    }
+
+    /* Licensed bar */
+    .licensed {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 12px;
+        padding: 16px;
+        align-items: flex-start;
+    }
+
+    .terms-policy ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
 @media (max-width: 992px) {
 
     html,
