@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    
     <header>
         <div class="head-head">
             <!-- SECTION 1: The Top Bar -->
@@ -54,7 +55,25 @@
 
                 </div>
 
-
+                <div class="topbar-mobile-menu" id="topbarMenu">
+                    <div class="topbar-mobile-top">
+                        <div class="topbar-nigeria">
+                            <img src="/Images/nigeria.png" alt="Nigeria flag" width="18" height="12">
+                            <span>Country Locations</span>
+                        </div>
+                        <button class="topbar-close-btn" id="topbarClose" aria-label="Close menu">×</button>
+                    </div>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainable Banking</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Branch & ATM Locator</a></li>
+                        <li><a href="#">Market Rates</a></li>
+                        <li><a href="#">HELP</a></li>
+                    </ul>
+                </div>
 
                 <!-- SECTION 2: The Primary Navigation Bar (the main brand links) -->
                 <div class="primary-navigation">
@@ -485,6 +504,93 @@
                 </div>
             </div>
 
+            <div class="main-mobile-menu" id="mainMobileMenu">
+                <div class="main-mobile-top">
+                    <div class="logo">
+                        <img src="/Images/access-lg-logo.png" alt="Access Bank Logo">
+                    </div>
+                    <div class="main-mobile-top-right">
+                        <p class="net-banking">Internet Banking</p>
+                        <button class="main-mobile-close" id="mainMenuClose" aria-label="Close menu">×</button>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <button class="accordion-header" type="button">
+                                Home
+                                <span class="accordion-chevron">⌄</span>
+                            </button>
+                            <div class="accordion-body">
+                                <a href="#">Home</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="accordion-header" type="button">
+                                Personal
+                                <span class="accordion-chevron">⌄</span>
+                            </button>
+                            <div class="accordion-body">
+                                <a href="#">Everyday Accounts</a>
+                                <a href="#">Cards</a>
+                                <a href="#">Loans</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="accordion-header" type="button">
+                                Business
+                                <span class="accordion-chevron">⌄</span>
+                            </button>
+                            <div class="accordion-body">
+                                <a href="#">Business Accounts</a>
+                                <a href="#">SME Banking</a>
+                                <a href="#">FX Products</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="accordion-header" type="button">
+                                Corporate
+                                <span class="accordion-chevron">⌄</span>
+                            </button>
+                            <div class="accordion-body">
+                                <a href="#">Corporate Banking</a>
+                                <a href="#">Loans</a>
+                                <a href="#">Trade Finance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="accordion-header" type="button">
+                                Private
+                                <span class="accordion-chevron">⌄</span>
+                            </button>
+                            <div class="accordion-body">
+                                <a href="#">Private Banking</a>
+                                <a href="#">Investment Management</a>
+                                <a href="#">Exclusive Services</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="accordion-header" type="button">
+                                Ways to Bank
+                                <span class="accordion-chevron">⌄</span>
+                            </button>
+                            <div class="accordion-body">
+                                <a href="#">Mobile Banking</a>
+                                <a href="#">USSD</a>
+                                <a href="#">Online Banking</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="main-mobile-bottom">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Help & Support</a>
+                    <a href="#">Locate Us</a>
+                </div>
+            </div>
+
     </header>
 
 
@@ -604,18 +710,13 @@
         <div class="visual-area">
 
             <img src="/Images/imgi_112_access-money-bg-2.png" alt="" class="half-circle">
-
             <img src="Images/imgi_40_access-money-img.png" alt="" class="phones">
-
         </div>
 
         <!-- Content Card -->
         <div class="money-card">
             <div class="slash"> <img src="/Images/slash.svg" alt="" class="corner-line"></div>
-
-
             <h2>Access Money</h2>
-
             <p>
                 Access Bank's Mobile Money service (a.k.a AccessMoney)
                 developed and delivered in collaboration with Airtel Nigeria.
@@ -787,7 +888,7 @@
     </div>
 
 
-        <!-- Footer Section -->
+    <!-- Footer Section -->
     <footer>
         <div class="tb-content">
             <div class="ft">
@@ -888,21 +989,25 @@
 
 
 
-        <!-- ======= JAVASCRIPT ======= -->
+
+
+    <!-- ======= JAVASCRIPT ======= -->
     <script>
         // --- TOPBAR MENU (grid icon opens blue menu) ---
         const gridBtn = document.getElementById('gridIconBtn');
         const topbarMenu = document.getElementById('topbarMenu');
         const topbarClose = document.getElementById('topbarClose');
 
-        if (gridBtn) {
-            gridBtn.addEventListener('click', function () {
+        if (gridBtn && topbarMenu) {
+            gridBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
                 topbarMenu.classList.add('open');
             });
         }
 
-        if (topbarClose) {
-            topbarClose.addEventListener('click', function () {
+        if (topbarClose && topbarMenu) {
+            topbarClose.addEventListener('click', function (e) {
+                e.stopPropagation();
                 topbarMenu.classList.remove('open');
             });
         }
@@ -912,22 +1017,30 @@
         const mainMobileMenu = document.getElementById('mainMobileMenu');
         const mainMenuClose = document.getElementById('mainMenuClose');
 
-        if (hamburgerBtn) {
-            hamburgerBtn.addEventListener('click', function () {
+        if (hamburgerBtn && mainMobileMenu) {
+            hamburgerBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
                 mainMobileMenu.classList.add('open');
             });
         }
 
-        if (mainMenuClose) {
-            mainMenuClose.addEventListener('click', function () {
+        if (mainMenuClose && mainMobileMenu) {
+            mainMenuClose.addEventListener('click', function (e) {
+                e.stopPropagation();
                 mainMobileMenu.classList.remove('open');
             });
         }
 
         // Close when clicking outside the menu (on the page background)
         document.addEventListener('click', function (e) {
+            if (topbarMenu && topbarMenu.classList.contains('open')) {
+                if (!topbarMenu.contains(e.target) && e.target !== gridBtn && !gridBtn?.contains(e.target)) {
+                    topbarMenu.classList.remove('open');
+                }
+            }
+
             if (mainMobileMenu && mainMobileMenu.classList.contains('open')) {
-                if (!mainMobileMenu.contains(e.target) && e.target !== hamburgerBtn && !hamburgerBtn.contains(e.target)) {
+                if (!mainMobileMenu.contains(e.target) && e.target !== hamburgerBtn && !hamburgerBtn?.contains(e.target)) {
                     mainMobileMenu.classList.remove('open');
                 }
             }
@@ -980,29 +1093,6 @@
             }
         });
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
